@@ -5,13 +5,20 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container well">
       <div class="row">
         <div id="circle">
-          <div id="timer">25</div>
-          <div id="break">5</div>
-          <div id="start">Start</div>
-          <div id="start">Stop</div>
+        <div class="work-area range-display">
+          <input type="range" id="work" class="grab" value="25" max="45" oninput="updateWorkValue(this.value)" onchange="updateWorkValue(this.value)">
+          <div><span id="work-display-value">25</span> mins - Work</div>
+        </div>
+        <div class="break-area range-display">
+          <input type="range" id="break" class="grab" value="5" max="25" oninput="updateBreakValue(this.value)" onchange="updateBreakValue(this.value)">
+          <div><span id="break-display-value">5</span> mins - Break</div>
+        </div>
+          <div id="display"></div>
+          <button class="btn btn-default" id="start">Start</button>
+          <button class="btn btn-default" id="stop" disabled="true">Stop</button>
         </div>
       </div>
     </div>
@@ -19,3 +26,4 @@
   <script src="main.js"></script>
   </body>
 </html>
+

@@ -1,20 +1,58 @@
-#circle {
-  width: 500px;
-  height: 500px;
-  -webkit-border-radius: 250px;
-  -moz-border-radius: 250px;
-  border-radius: 250px;
-  background: green;
-  margin: 0 auto;
-  position: absolute;
-  background-image:
-         /*10% = 126deg = 90 + ( 360 * .1 )*/
-        linear-gradient(91deg, transparent 50%, white 50%),
-        linear-gradient(90deg, white 50%, transparent 50%);
+#work{
+	width:90%;
 }
-.container{
+#break{
 	width: 50%;
 }
-#start{
-	background-color: yellow;
+.grab{
+	cursor: -webkit-grab;
+}
+#display{
+	text-transform:capitalize;
+	font-size: 2.5em;
+	background-color: white;
+	border: solid 2px #aaa;
+	border-radius: 10px;
+	padding: 7px;
+	margin: 5px;
+	box-shadow: 2px 2px 5px #888888;
+}
+body{
+	font-size: 2em;
+	background-image: url('https://pixabay.com/static/uploads/photo/2014/10/22/17/25/running-498257_1280.jpg');
+}
+.btn{
+	font-size: 1.5em;
+	border-radius: 10px;
+}
+.well {
+	padding: 32px;
+	margin-top: 60px;
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+@media screen and (min-width: 950px) {
+  .well{
+		width: 50%;
+	}
+}
+@media screen and (min-width: 700px) and (max-width: 950px){
+  .well{
+		width: 70%;
+	}
+	.range-display{
+		font-size: 1.6em;
+	}
+}
+@media screen and (min-width: 0px) and (max-width: 700px) {
+	.range-display{
+		font-size: 2em;
+	}
+  .well{
+		width: 95%;
+	}
+	.btn{
+		border-radius: 5px;
+		width: 100%;
+	}
 }

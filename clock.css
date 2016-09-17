@@ -1,0 +1,20 @@
+#circle {
+  width: 500px;
+  height: 500px;
+  -webkit-border-radius: 250px;
+  -moz-border-radius: 250px;
+  border-radius: 250px;
+  background: green;
+  margin: 0 auto;
+  position: absolute;
+  background-image:
+         /*10% = 126deg = 90 + ( 360 * .1 )*/
+        linear-gradient(91deg, transparent 50%, white 50%),
+        linear-gradient(90deg, white 50%, transparent 50%);
+}
+.container{
+	width: 50%;
+}
+#start{
+	background-color: yellow;
+}
